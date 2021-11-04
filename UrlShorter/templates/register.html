@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Register User
+{% endblock %}
+{% block content %}
+<h1>Register user </h1>
+<hr>
+<br>
+<form action="/register" method="post">
+    <label>Enter Your User name :  </label>
+    <input type="text" name="un">
+    <br>
+    <br>
+    <label>Enter Password :  </label>
+    <input type="password" name="ps" >
+    <br>
+    <br>
+    <br>
+    <button class="btn btn-primary" > Register</button>
+</form>
+{% endblock %}
